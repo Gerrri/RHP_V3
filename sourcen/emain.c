@@ -52,9 +52,11 @@ void steuerungsfunktion    (	USHORT ist_oben, USHORT ist_unten,
 
 			// 8.)    Eingabesignale auswerten und Zustandswechsel herbei fuehren
 			//         Ein IF je Pfeil
+
 			if (  (ist_unten == 0) && (nach_unten == 1) && (nach_oben == 0)) {
 				*p_state = runter; // Wechsel in den Zustand "runter"
 			}
+
 			if (  (ist_oben == 0) && (nach_oben == 1) ){
 				*p_state = hoch;  // Wechsel in den Zustand "hoch"
 			}
